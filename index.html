@@ -9,35 +9,117 @@
   <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
-<body>
+<body class="main-container">
 
-  My balance
-  $921.48
+  <!-- Main Content Container Start -->
+  <div class="main-content-container">
 
-  Spending - Last 7 days
+    <!-- Header Start -->
+    <header class="header">
+      <div class="header-content-container">
+        <p class="header-copy"> My balance</p>
+        <p class="header-amount">$921.48</p>
+        <div class="logo-container"></div>
+      </div>
+    </header>
+    <!-- Header End -->
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <!-- Main Content Start -->
+    <main class="main-content">
+      <h1 class="main-header">Spending - Last 7 days</h1>
 
-  Total this month
-  $478.33
+      <!-- Bar Chart Container Start -->
+      <div class="bar-chart-container">
 
-  +2.4%
-  from last month
+        <div class="bar-graph-container">
+          <p>mon</p>
+          <div id="mon-bar-graph" class="bar-graph"></div>
+        </div>
+
+        <div class="bar-graph-container">
+          <p>tue</p>
+          <div id="tue-bar-graph" class="bar-graph"></div>
+        </div>
+
+        <div class="bar-graph-container">
+          <p>wed</p>
+          <div id="wed-bar-graph" class="bar-graph"></div>
+        </div>
+
+        <div class="bar-graph-container">
+          <p>thu</p>
+          <div id="thu-bar-graph" class="bar-graph"></div>
+        </div>
+
+        <div class="bar-graph-container">
+          <p>fri</p>
+          <div id="fri-bar-graph" class="bar-graph"></div>
+        </div>
+
+        <div class="bar-graph-container">
+          <p>sat</p>
+          <div id="sat-bar-graph" class="bar-graph"></div>
+        </div>
+
+        <div class="bar-graph-container">
+          <p>sun</p>
+          <div id="sun-bar-graph" class="bar-graph"></div>
+        </div>
+        
+      </div>
+      <!-- Bar Chart Container End -->
+
+      <!-- Horizontal Line Start -->
+      <div class="horizontal-line"></div>
+      <!-- Horizontal Line End -->
+
+      <!-- Stats Container Start -->
+      <div class="stats-container">
+        <div class="total-stats-container">
+          <p class="total-stats-copy">Total this month</p>
+          <p class="total-stats-amount">$478.33</p>
+        </div>
+
+        <div class="last-month-stats-container">
+          <p class="change-percentage">+2.4%</p>
+          <p class="last-month-change-copy">from last month</p>
+        </div>
+      </div>
+      <!-- Stats Container End -->
+
+    </main>
+    <!-- Main Content End -->
+
+  </div>
+  <!-- Main Content Container End -->
+
+ 
   
-  <div class="attribution">
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+  
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
