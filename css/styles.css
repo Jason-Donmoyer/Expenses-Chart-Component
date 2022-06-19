@@ -1,0 +1,75 @@
+/* ###################################################################### */
+
+                              /* IMPORTS */
+
+/* ###################################################################### */
+
+
+/* GOOGLE FONTS */
+
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+/* font-family: 'DM Sans', sans-serif; */
+
+
+
+/* ###################################################################### */
+
+                            /* VARIABLES */
+
+/* ###################################################################### */
+
+
+/* VARIABLES */
+:root {
+
+
+  /* FONT FAMILY */
+  --main-font-family: 'DM Sans', sans-serif;
+
+
+  /* FONT WEIGHT */
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+
+  /* COLORS */
+
+  /* Primary */
+  --primary-color: hsl(10, 79%, 65%);
+  --secondary-color: hsl(186, 34%, 60%);
+
+  /* Nuetral */
+  --dark-color: hsl(25, 47%, 15%);
+  --dark-gray-color: hsl(28, 10%, 53%);
+  --light-gray-color: hsl(27, 66%, 92%);
+  --light-color: hsl(33, 100%, 98%);
+  
+
+}
+
+
+
+/* ###################################################################### */
+
+                           /* MAIN STYLES */
+
+/* ###################################################################### */
+
+
+/* html */
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* body */
+.main-container {
+  font-family: var(--main-font-family);
+  font-weight: var(--fw-reg);
+}
+
