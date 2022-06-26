@@ -41,9 +41,10 @@
 
   /* Nuetral */
   --dark-color: hsl(25, 47%, 15%);
-  --dark-gray-color: hsl(28, 10%, 53%);
-  --light-gray-color: hsl(27, 66%, 92%);
+  --dark-nuetral-color: hsl(28, 10%, 53%);
+  --light-nuetral-color: hsl(27, 66%, 92%);
   --light-color: hsl(33, 100%, 98%);
+  --white: hsl(0, 0%, 100%);
   
 
 }
@@ -71,5 +72,62 @@ html {
 .main-container {
   font-family: var(--main-font-family);
   font-weight: var(--fw-reg);
+  height: 100vh;
 }
 
+
+/* Main Content Container */
+.main-content-container {
+  height: 100%;
+  background-color: var(--light-nuetral-color);
+  padding-right: 0.888889rem;
+  padding-left: 0.888889rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Header */
+.header {
+  height: 5.388889rem;
+  margin-bottom: 0.888889rem;
+  border-radius: 0.555556rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Header Content */
+.header-content-container {
+  margin-left: 1.111111rem;
+  color: var(--white);
+}
+
+
+/* Header Copy */
+.header-copy {
+  font-size: 0.833333rem;
+  line-height: 1.111111rem;
+  margin-bottom: 0.222222rem;
+}
+
+/* Header Amount */
+.header-amount {
+  font-size: 1.333333rem;
+  line-height: 1.722222rem;
+  font-weight: var(--fw-bold);
+}
+
+
+/* Logo Container */
+.logo-container {
+  width: 3.333333rem;
+  height: 2.222222rem;
+  margin-right: 1.333333rem;
+  background-image: url(../images/logo.svg);
+  background-size: cover;
+  background-position: center;
+}
