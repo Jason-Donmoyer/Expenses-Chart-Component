@@ -131,3 +131,93 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+
+/* Main Content */
+.main-content {
+  padding: 1.333333rem 1.111111rem;
+  border-radius: 0.555556rem;
+  background-color: var(--light-color);
+}
+
+
+/* h1 Main Heading */
+.main-heading {
+  font-size: 1.333333rem;
+  line-height: 1.736111rem;
+  font-weight: var(--fw-bold);
+  color: var(--dark-color);
+}
+
+
+/* Bar Chart Container */
+.bar-chart-container {
+  height: 12.722222rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+/* Bar Graph Container */
+.bar-graph-container {
+  width: 1.833333rem;
+}
+
+
+/* Horizontal Line */
+.horizontal-line {
+  height: 0.111111rem;
+  margin-top: 1.333333rem;
+  margin-bottom: 1.333333rem;
+  background-color: var(--light-nuetral-color);
+}
+
+
+/* Stats Container */
+.stats-container {
+  height: 3.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+/* Total Stats Amount */
+.total-stats-amount {
+  font-size: 1.666667rem;
+  line-height: 2.166667rem;
+  font-weight: var(--fw-bold);
+  color: var(--dark-color);
+}
+
+
+/* Last Month Stats Container */
+.last-month-stats-container {
+  height: 2.222222rem;
+}
+
+/* Stats Copy */
+.total-stats-copy,
+.change-percentage,
+.last-month-change-copy {
+  font-size: 0.833333rem;
+  line-height: 1.111111rem;
+  color: var(--dark-nuetral-color);
+}
+
+
+/* Total Stats Copy */
+.total-stats-copy {
+  margin-bottom: 0.222222rem;
+}
+
+
+/* Last Month Change Percentage */
+.change-percentage {
+  font-weight: var(--fw-bold);
+  text-align: right;
+  color: var(--dark-color);
+}
+
+
