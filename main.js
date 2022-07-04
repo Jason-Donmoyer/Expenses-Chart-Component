@@ -13,6 +13,8 @@ const friGraph = document.getElementById('fri-bar-graph');
 const satGraph = document.getElementById('sat-bar-graph');
 const sunGraph = document.getElementById('sun-bar-graph');
 
+// Function to find the highest expense
+// Sets color of highest expense chart and gets expense ratio
 function getHighestExpense(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].amount > highestExpense) {

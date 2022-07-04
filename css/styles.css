@@ -168,7 +168,17 @@ html {
 
 /* Bar Graph */
 .bar-graph {
+  margin-bottom: 0.611111rem;
   background-color: var(--primary-color);
+  border-radius: 0.166667rem;
+}
+
+
+/* Bar Graph Copy */
+.bar-graph-copy {
+  font-size: 0.666667rem;
+  line-height: 0.888889rem;
+  color: var(--dark-nuetral-color);
 }
 
 
