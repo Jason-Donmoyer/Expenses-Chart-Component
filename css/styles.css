@@ -162,6 +162,13 @@ html {
 /* Bar Graph Container */
 .bar-graph-container {
   width: 1.833333rem;
+  text-align: center;
+}
+
+
+/* Bar Graph */
+.bar-graph {
+  background-color: var(--primary-color);
 }
 
 
