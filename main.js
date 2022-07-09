@@ -13,6 +13,15 @@ const friGraph = document.getElementById('fri-bar-graph');
 const satGraph = document.getElementById('sat-bar-graph');
 const sunGraph = document.getElementById('sun-bar-graph');
 
+
+const monExpCopy = document.getElementById('mon-expense-copy');
+const tueExpCopy = document.getElementById('tue-expense-copy');
+const wedExpCopy = document.getElementById('wed-expense-copy');
+const thuExpCopy = document.getElementById('thu-expense-copy');
+const friExpCopy = document.getElementById('fri-expense-copy');
+const satExpCopy = document.getElementById('sat-expense-copy');
+const sunExpCopy = document.getElementById('sun-expense-copy');
+
 // Function to find the highest expense
 // Sets color of highest expense chart and gets expense ratio
 function getHighestExpense(arr) {
@@ -22,7 +31,18 @@ function getHighestExpense(arr) {
       highestExpenseDay = arr[i];
     }
   }
-  document.getElementById(`${highestExpenseDay.day}-bar-graph`).style.backgroundColor = 'var(--secondary-color)';
+  let currentHighExpenseDay = document.getElementById(`${highestExpenseDay.day}-bar-graph`);
+  currentHighExpenseDay.style.backgroundColor = 'var(--secondary-color)';
+
+  currentHighExpenseDay.addEventListener('mouseenter', () => {
+    currentHighExpenseDay.style.backgroundColor = 'var(--light-active-color)';
+  });
+
+
+  currentHighExpenseDay.addEventListener('mouseleave', () => {
+    currentHighExpenseDay.style.backgroundColor = 'var(--secondary-color)';
+  });
+  
   getExpenseRatio();
 }
 
@@ -39,35 +59,53 @@ function getGraphHeight(arr) {
     switch (arr[i].day) {
       case 'mon':
       monGraph.style.height = `${expenseRatio * arr[i].amount}px`;
-      console.log(expenseRatio * arr[i].amount);
+      monExpCopy.innerText = `$${arr[i].amount}`;
       break;
       case 'tue':
       tueGraph.style.height = `${expenseRatio * arr[i].amount}px`;
-      console.log(expenseRatio * arr[i].amount);
+      tueExpCopy.innerText = `$${arr[i].amount}`;
       break;
       case 'wed':
       wedGraph.style.height = `${expenseRatio * arr[i].amount}px`;
-      console.log(expenseRatio * arr[i].amount);
+      wedExpCopy.innerText = `$${arr[i].amount}`;
       break;
       case 'thu':
       thuGraph.style.height = `${expenseRatio * arr[i].amount}px`;
-      console.log(expenseRatio * arr[i].amount);
+      thuExpCopy.innerText = `$${arr[i].amount}`;
       break;
       case 'fri':
       friGraph.style.height = `${expenseRatio * arr[i].amount}px`;
-      console.log(expenseRatio * arr[i].amount);
+      friExpCopy.innerText = `$${arr[i].amount}`;
       break;
       case 'sat':
       satGraph.style.height = `${expenseRatio * arr[i].amount}px`;
-      console.log(expenseRatio * arr[i].amount);
+      satExpCopy.innerText = `$${arr[i].amount}`;
       break;
       case 'sun':
       sunGraph.style.height = `${expenseRatio * arr[i].amount}px`;
-      console.log(expenseRatio * arr[i].amount);
+      sunExpCopy.innerText = `$${arr[i].amount}`;
       break;
       default: console.log('Error');
       break;
     }
+  }
+}
+
+
+function showPopup() {
+  let barGraphs = document.querySelectorAll('.bar-graph');
+  for (let i = 0; i < barGraphs.length; i++) {
+    barGraphs[i].addEventListener('mouseenter', (e) => {
+      // console.log(e.target.parentNode.children[0]);
+      e.target.parentNode.children[0].style.visibility = 'visible';
+    });
+  }
+
+  for (let i = 0; i < barGraphs.length; i++) {
+    barGraphs[i].addEventListener('mouseleave', (e) => {
+      // console.log(e.target.parentNode.children[0]);
+      e.target.parentNode.children[0].style.visibility = 'hidden';
+    });
   }
 }
 
@@ -80,6 +118,7 @@ async function getExpenseData() {
   data.forEach((obj) => expenseData.push(obj));
   getHighestExpense(expenseData);
   getGraphHeight(expenseData);
+  showPopup();
 }
 
 

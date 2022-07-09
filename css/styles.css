@@ -45,6 +45,10 @@
   --light-nuetral-color: hsl(27, 66%, 92%);
   --light-color: hsl(33, 100%, 98%);
   --white: hsl(0, 0%, 100%);
+
+  /* Active State Colors */
+  --light-active-color: hsla(186, 49%, 80%, 1);
+  --dark-active-color: hsla(10, 100%, 76%, 1);
   
 
 }
@@ -163,6 +167,12 @@ html {
 .bar-graph-container {
   width: 1.833333rem;
   text-align: center;
+}
+
+
+/* Expense Popup */
+.expense-popup {
+  display: none;
 }
 
 
@@ -376,6 +386,40 @@ html {
   /* Total Stats Copy */
   .total-stats-copy {
     margin-bottom: 0.0555556rem;
+  }
+
+
+  /* ACTIVE STATES */
+
+
+  /* Bar Graph */
+  .bar-graph:hover {
+    cursor: pointer;
+    background-color: var(--dark-active-color);
+  }
+
+
+  /* Expense Popup */
+  .expense-popup {
+    visibility: hidden;
+    width: 3.94444444rem;
+    height: 2.222222rem;
+    margin-bottom: 0.444444rem;
+    border-radius: 0.277778rem;
+    background-color: var(--dark-color);
+    position: relative;
+    right: 0.573333rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* Expense Popup Copy */
+  .expense-popup-copy {
+    line-height: 1.277778rem;
+    font-weight: var(--fw-bold);
+    color: var(--white);
   }
 
 
