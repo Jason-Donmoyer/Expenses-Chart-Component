@@ -77,7 +77,7 @@ async function getExpenseData() {
   const res = await fetch('https://jason-donmoyer.github.io/JSON-Files/expenses-data.json');
   const data = await res.json();
   // console.log(data);
-  data.forEach((obj) => expenseData.push(obj))
+  data.forEach((obj) => expenseData.push(obj));
   getHighestExpense(expenseData);
   getGraphHeight(expenseData);
 }

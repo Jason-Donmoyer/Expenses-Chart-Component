@@ -238,3 +238,146 @@ html {
 }
 
 
+/* ###################################################################### */
+
+                          /* MEDIA QUERIES */
+
+/* ###################################################################### */
+
+
+@media screen and (min-width: 580px) {
+
+
+  /* body */
+  .main-container {
+    background-color: var(--light-nuetral-color);
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* Main Content Container */
+  .main-content-container {
+    padding: 0rem;
+  }  
+
+
+  /* Header */
+  .header {
+    width: 30rem;
+    height: 6.944444rem;
+    margin-bottom: 1.333333rem;
+  }
+
+
+  /* Header Content */
+  .header-content-container {
+    margin-left: 1.777778rem;
+  }
+
+
+  /* Header Copy */
+  .header-copy {
+    font-size: 1rem;
+    line-height: 1.277778rem;
+    margin-bottom: 0.444444rem;
+  }
+
+
+  /* Header Amount */
+  .header-amount {
+    font-size: 1.777778rem;
+    line-height: 2.333333rem;
+  }
+
+
+  /* Logo Container */
+  .logo-container {
+    width: 4rem;
+    height: 2.666667rem;
+    margin-right: 2.166667rem;
+  }
+
+
+  /* Main Content */
+  .main-content {
+    width: 30rem;
+    padding: 1.777778rem 2.222222rem 2.222222rem 2.222222rem;
+  }
+
+
+  /* h1 Main Heading */
+  .main-heading {
+    font-size: 1.777778rem;
+    line-height: 2.333333rem;
+  }
+
+
+  /* Bar Chart Container */
+  .bar-chart-container {
+    height: 13.555556rem;
+  }
+
+
+  /* Bar Graph Container */
+  .bar-graph-container {
+    width: 2.797778rem;
+  }
+
+
+  /* Bar Graph */
+  .bar-graph {
+    margin-bottom: 0.444444rem;
+  }
+
+
+  /* Bar Graph Copy */
+  .bar-graph-copy {
+    font-size: 0.833333rem;
+    line-height: 1.111111rem;
+  }
+
+
+  /* Horizontal Line */
+  .horizontal-line {
+    margin-top: 1.777778rem;
+    margin-bottom: 1.777778rem;
+  }
+
+
+  /* Stats Container */
+  .stats-container {
+    height: 4.833333rem;
+  }
+
+
+  /* Total Stats Amount */
+  .total-stats-amount {
+    font-size: 2.666667rem;
+    line-height: 3.472222rem;
+  }
+
+
+  /* Last Month Stats Container */
+  .last-month-stats-container {
+    height: 2.611111rem;
+  }
+
+
+  /* Stats Copy */
+  .total-stats-copy,
+  .change-percentage,
+  .last-month-change-copy {
+    font-size: 1rem;
+    line-height: 1.277778rem;
+  }
+
+
+  /* Total Stats Copy */
+  .total-stats-copy {
+    margin-bottom: 0.0555556rem;
+  }
+
+
+}
+
