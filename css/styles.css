@@ -1,37 +1,29 @@
 /* ###################################################################### */
 
-                              /* IMPORTS */
+/* IMPORTS */
 
 /* ###################################################################### */
-
 
 /* GOOGLE FONTS */
 
 /* DM Sans */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 /* font-family: 'DM Sans', sans-serif; */
 
-
-
 /* ###################################################################### */
 
-                            /* VARIABLES */
+/* VARIABLES */
 
 /* ###################################################################### */
-
 
 /* VARIABLES */
 :root {
-
-
   /* FONT FAMILY */
-  --main-font-family: 'DM Sans', sans-serif;
-
+  --main-font-family: "DM Sans", sans-serif;
 
   /* FONT WEIGHT */
   --fw-reg: 400;
   --fw-bold: 700;
-
 
   /* COLORS */
 
@@ -49,28 +41,24 @@
   /* Active State Colors */
   --light-active-color: hsla(186, 49%, 80%, 1);
   --dark-active-color: hsla(10, 100%, 76%, 1);
-  
-
 }
 
-
-
 /* ###################################################################### */
 
-                           /* MAIN STYLES */
+/* MAIN STYLES */
 
 /* ###################################################################### */
-
 
 /* html */
 html {
   box-sizing: border-box;
   font-size: 18px;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
 
 /* body */
 .main-container {
@@ -79,18 +67,16 @@ html {
   height: 100vh;
 }
 
-
 /* Main Content Container */
 .main-content-container {
   height: 100%;
   background-color: var(--light-nuetral-color);
-  padding-right: 0.888889rem;
-  padding-left: 0.888889rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 500px;
 }
-
 
 /* Header */
 .header {
@@ -103,13 +89,11 @@ html {
   justify-content: space-between;
 }
 
-
 /* Header Content */
 .header-content-container {
   margin-left: 1.111111rem;
   color: var(--white);
 }
-
 
 /* Header Copy */
 .header-copy {
@@ -125,7 +109,6 @@ html {
   font-weight: var(--fw-bold);
 }
 
-
 /* Logo Container */
 .logo-container {
   width: 3.333333rem;
@@ -136,14 +119,12 @@ html {
   background-position: center;
 }
 
-
 /* Main Content */
 .main-content {
   padding: 1.333333rem 1.111111rem;
   border-radius: 0.555556rem;
   background-color: var(--light-color);
 }
-
 
 /* h1 Main Heading */
 .main-heading {
@@ -153,7 +134,6 @@ html {
   color: var(--dark-color);
 }
 
-
 /* Bar Chart Container */
 .bar-chart-container {
   height: 12.722222rem;
@@ -162,19 +142,33 @@ html {
   justify-content: space-between;
 }
 
-
 /* Bar Graph Container */
 .bar-graph-container {
   width: 1.833333rem;
   text-align: center;
 }
 
-
 /* Expense Popup */
 .expense-popup {
-  display: none;
+  visibility: hidden;
+  width: 2.8rem;
+  height: 1.8rem;
+  margin-bottom: 0.444444rem;
+  border-radius: 0.277778rem;
+  background-color: var(--dark-color);
+  position: relative;
+  right: 0.573333rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.expense-popup-copy {
+  line-height: 1.277778rem;
+  font-size: 15px;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+}
 
 /* Bar Graph */
 .bar-graph {
@@ -182,7 +176,10 @@ html {
   background-color: var(--primary-color);
   border-radius: 0.166667rem;
 }
-
+.bar-graph:hover {
+  cursor: pointer;
+  background-color: var(--dark-active-color);
+}
 
 /* Bar Graph Copy */
 .bar-graph-copy {
@@ -190,7 +187,6 @@ html {
   line-height: 0.888889rem;
   color: var(--dark-nuetral-color);
 }
-
 
 /* Horizontal Line */
 .horizontal-line {
@@ -200,7 +196,6 @@ html {
   background-color: var(--light-nuetral-color);
 }
 
-
 /* Stats Container */
 .stats-container {
   height: 3.5rem;
@@ -209,7 +204,6 @@ html {
   justify-content: space-between;
 }
 
-
 /* Total Stats Amount */
 .total-stats-amount {
   font-size: 1.666667rem;
@@ -217,7 +211,6 @@ html {
   font-weight: var(--fw-bold);
   color: var(--dark-color);
 }
-
 
 /* Last Month Stats Container */
 .last-month-stats-container {
@@ -233,12 +226,10 @@ html {
   color: var(--dark-nuetral-color);
 }
 
-
 /* Total Stats Copy */
 .total-stats-copy {
   margin-bottom: 0.222222rem;
 }
-
 
 /* Last Month Change Percentage */
 .change-percentage {
@@ -247,17 +238,13 @@ html {
   color: var(--dark-color);
 }
 
-
 /* ###################################################################### */
 
-                          /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 /* ###################################################################### */
-
 
 @media screen and (min-width: 580px) {
-
-
   /* body */
   .main-container {
     background-color: var(--light-nuetral-color);
@@ -265,12 +252,10 @@ html {
     justify-content: center;
   }
 
-
   /* Main Content Container */
   .main-content-container {
     padding: 0rem;
-  }  
-
+  }
 
   /* Header */
   .header {
@@ -279,12 +264,10 @@ html {
     margin-bottom: 1.333333rem;
   }
 
-
   /* Header Content */
   .header-content-container {
     margin-left: 1.777778rem;
   }
-
 
   /* Header Copy */
   .header-copy {
@@ -293,13 +276,11 @@ html {
     margin-bottom: 0.444444rem;
   }
 
-
   /* Header Amount */
   .header-amount {
     font-size: 1.777778rem;
     line-height: 2.333333rem;
   }
-
 
   /* Logo Container */
   .logo-container {
@@ -308,13 +289,11 @@ html {
     margin-right: 2.166667rem;
   }
 
-
   /* Main Content */
   .main-content {
     width: 30rem;
     padding: 1.777778rem 2.222222rem 2.222222rem 2.222222rem;
   }
-
 
   /* h1 Main Heading */
   .main-heading {
@@ -322,24 +301,20 @@ html {
     line-height: 2.333333rem;
   }
 
-
   /* Bar Chart Container */
   .bar-chart-container {
     height: 13.555556rem;
   }
-
 
   /* Bar Graph Container */
   .bar-graph-container {
     width: 2.797778rem;
   }
 
-
   /* Bar Graph */
   .bar-graph {
     margin-bottom: 0.444444rem;
   }
-
 
   /* Bar Graph Copy */
   .bar-graph-copy {
@@ -347,19 +322,16 @@ html {
     line-height: 1.111111rem;
   }
 
-
   /* Horizontal Line */
   .horizontal-line {
     margin-top: 1.777778rem;
     margin-bottom: 1.777778rem;
   }
 
-
   /* Stats Container */
   .stats-container {
     height: 4.833333rem;
   }
-
 
   /* Total Stats Amount */
   .total-stats-amount {
@@ -367,12 +339,10 @@ html {
     line-height: 3.472222rem;
   }
 
-
   /* Last Month Stats Container */
   .last-month-stats-container {
     height: 2.611111rem;
   }
-
 
   /* Stats Copy */
   .total-stats-copy,
@@ -382,22 +352,18 @@ html {
     line-height: 1.277778rem;
   }
 
-
   /* Total Stats Copy */
   .total-stats-copy {
     margin-bottom: 0.0555556rem;
   }
 
-
   /* ACTIVE STATES */
-
 
   /* Bar Graph */
   .bar-graph:hover {
     cursor: pointer;
     background-color: var(--dark-active-color);
   }
-
 
   /* Expense Popup */
   .expense-popup {
@@ -414,14 +380,12 @@ html {
     justify-content: center;
   }
 
-
   /* Expense Popup Copy */
   .expense-popup-copy {
     line-height: 1.277778rem;
     font-weight: var(--fw-bold);
     color: var(--white);
   }
-
-
 }
+
 
